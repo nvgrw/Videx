@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240BD7D12079659E00EDF5CC /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240BD7D02079659E00EDF5CC /* ActionRequestHandler.swift */; };
+		240BD7D32079659E00EDF5CC /* PictureInPicture.js in Resources */ = {isa = PBXBuildFile; fileRef = 240BD7D22079659E00EDF5CC /* PictureInPicture.js */; };
+		240BD7D72079659E00EDF5CC /* Picture in Picture.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 240BD7CE2079659E00EDF5CC /* Picture in Picture.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		249589D220791F4D00DF7F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249589D120791F4D00DF7F26 /* AppDelegate.swift */; };
 		249589D420791F4D00DF7F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249589D320791F4D00DF7F26 /* ViewController.swift */; };
 		249589D720791F4D00DF7F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249589D520791F4D00DF7F26 /* Main.storyboard */; };
@@ -19,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		240BD7D52079659E00EDF5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249589C620791F4D00DF7F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240BD7CD2079659E00EDF5CC;
+			remoteInfo = "Picture in Picture";
+		};
 		249589EF2079205300DF7F26 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 249589C620791F4D00DF7F26 /* Project object */;
@@ -36,6 +46,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				249589F12079205300DF7F26 /* Extract Video.appex in Embed App Extensions */,
+				240BD7D72079659E00EDF5CC /* Picture in Picture.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		240BD7CE2079659E00EDF5CC /* Picture in Picture.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Picture in Picture.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		240BD7D02079659E00EDF5CC /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		240BD7D22079659E00EDF5CC /* PictureInPicture.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = PictureInPicture.js; sourceTree = "<group>"; };
+		240BD7D42079659E00EDF5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		249589CE20791F4D00DF7F26 /* Videx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Videx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249589D120791F4D00DF7F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		249589D320791F4D00DF7F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		240BD7CB2079659E00EDF5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		249589CB20791F4D00DF7F26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,11 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240BD7CF2079659E00EDF5CC /* Picture in Picture */ = {
+			isa = PBXGroup;
+			children = (
+				240BD7D02079659E00EDF5CC /* ActionRequestHandler.swift */,
+				240BD7D22079659E00EDF5CC /* PictureInPicture.js */,
+				240BD7D42079659E00EDF5CC /* Info.plist */,
+			);
+			path = "Picture in Picture";
+			sourceTree = "<group>";
+		};
 		249589C520791F4D00DF7F26 = {
 			isa = PBXGroup;
 			children = (
 				249589D020791F4D00DF7F26 /* Videx */,
 				249589E82079205300DF7F26 /* Extract Video */,
+				240BD7CF2079659E00EDF5CC /* Picture in Picture */,
 				249589CF20791F4D00DF7F26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +122,7 @@
 			children = (
 				249589CE20791F4D00DF7F26 /* Videx.app */,
 				249589E72079205300DF7F26 /* Extract Video.appex */,
+				240BD7CE2079659E00EDF5CC /* Picture in Picture.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +154,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		240BD7CD2079659E00EDF5CC /* Picture in Picture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240BD7DA2079659E00EDF5CC /* Build configuration list for PBXNativeTarget "Picture in Picture" */;
+			buildPhases = (
+				240BD7CA2079659E00EDF5CC /* Sources */,
+				240BD7CB2079659E00EDF5CC /* Frameworks */,
+				240BD7CC2079659E00EDF5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Picture in Picture";
+			productName = "Picture in Picture";
+			productReference = 240BD7CE2079659E00EDF5CC /* Picture in Picture.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		249589CD20791F4D00DF7F26 /* Videx */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 249589E020791F4E00DF7F26 /* Build configuration list for PBXNativeTarget "Videx" */;
@@ -133,6 +184,7 @@
 			);
 			dependencies = (
 				249589F02079205300DF7F26 /* PBXTargetDependency */,
+				240BD7D62079659E00EDF5CC /* PBXTargetDependency */,
 			);
 			name = Videx;
 			productName = Videx;
@@ -166,6 +218,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = nik;
 				TargetAttributes = {
+					240BD7CD2079659E00EDF5CC = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					249589CD20791F4D00DF7F26 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -189,11 +244,20 @@
 			targets = (
 				249589CD20791F4D00DF7F26 /* Videx */,
 				249589E62079205300DF7F26 /* Extract Video */,
+				240BD7CD2079659E00EDF5CC /* Picture in Picture */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		240BD7CC2079659E00EDF5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240BD7D32079659E00EDF5CC /* PictureInPicture.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		249589CC20791F4D00DF7F26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +280,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		240BD7CA2079659E00EDF5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240BD7D12079659E00EDF5CC /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		249589CA20791F4D00DF7F26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +308,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		240BD7D62079659E00EDF5CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240BD7CD2079659E00EDF5CC /* Picture in Picture */;
+			targetProxy = 240BD7D52079659E00EDF5CC /* PBXContainerItemProxy */;
+		};
 		249589F02079205300DF7F26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 249589E62079205300DF7F26 /* Extract Video */;
@@ -271,6 +348,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		240BD7D82079659E00EDF5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAPBC93DAB;
+				INFOPLIST_FILE = "Picture in Picture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.vangerow.videx-app.Picture-in-Picture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		240BD7D92079659E00EDF5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAPBC93DAB;
+				INFOPLIST_FILE = "Picture in Picture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.vangerow.videx-app.Picture-in-Picture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		249589DE20791F4E00DF7F26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +579,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		240BD7DA2079659E00EDF5CC /* Build configuration list for PBXNativeTarget "Picture in Picture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240BD7D82079659E00EDF5CC /* Debug */,
+				240BD7D92079659E00EDF5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		249589C920791F4D00DF7F26 /* Build configuration list for PBXProject "Videx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

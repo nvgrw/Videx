@@ -18,8 +18,7 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ec: NSExtensionContext = self.extensionContext!
-        let item = ec.inputItems.first as! NSExtensionItem
+        let item = self.extensionContext!.inputItems.first as! NSExtensionItem
         let provider = item.attachments?.first as! NSItemProvider
         
         provider.loadItem(
