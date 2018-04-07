@@ -12,7 +12,35 @@
 		249589D720791F4D00DF7F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249589D520791F4D00DF7F26 /* Main.storyboard */; };
 		249589D920791F4E00DF7F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249589D820791F4E00DF7F26 /* Assets.xcassets */; };
 		249589DC20791F4E00DF7F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249589DA20791F4E00DF7F26 /* LaunchScreen.storyboard */; };
+		249589EA2079205300DF7F26 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249589E92079205300DF7F26 /* ActionViewController.swift */; };
+		249589ED2079205300DF7F26 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249589EB2079205300DF7F26 /* MainInterface.storyboard */; };
+		249589F12079205300DF7F26 /* Extract Video.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 249589E72079205300DF7F26 /* Extract Video.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		249589FA2079343700DF7F26 /* ExtractVideo.js in Resources */ = {isa = PBXBuildFile; fileRef = 249589F82079234900DF7F26 /* ExtractVideo.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		249589EF2079205300DF7F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249589C620791F4D00DF7F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249589E62079205300DF7F26;
+			remoteInfo = "Extract Video";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		249589F52079205300DF7F26 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				249589F12079205300DF7F26 /* Extract Video.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		249589CE20791F4D00DF7F26 /* Videx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Videx.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		249589D820791F4E00DF7F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		249589DB20791F4E00DF7F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		249589DD20791F4E00DF7F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249589E72079205300DF7F26 /* Extract Video.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Extract Video.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		249589E92079205300DF7F26 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		249589EC2079205300DF7F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		249589EE2079205300DF7F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249589F82079234900DF7F26 /* ExtractVideo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ExtractVideo.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		249589CB20791F4D00DF7F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		249589E42079205300DF7F26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				249589D020791F4D00DF7F26 /* Videx */,
+				249589E82079205300DF7F26 /* Extract Video */,
 				249589CF20791F4D00DF7F26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				249589CE20791F4D00DF7F26 /* Videx.app */,
+				249589E72079205300DF7F26 /* Extract Video.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +106,17 @@
 			path = Videx;
 			sourceTree = "<group>";
 		};
+		249589E82079205300DF7F26 /* Extract Video */ = {
+			isa = PBXGroup;
+			children = (
+				249589E92079205300DF7F26 /* ActionViewController.swift */,
+				249589EB2079205300DF7F26 /* MainInterface.storyboard */,
+				249589EE2079205300DF7F26 /* Info.plist */,
+				249589F82079234900DF7F26 /* ExtractVideo.js */,
+			);
+			path = "Extract Video";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +127,34 @@
 				249589CA20791F4D00DF7F26 /* Sources */,
 				249589CB20791F4D00DF7F26 /* Frameworks */,
 				249589CC20791F4D00DF7F26 /* Resources */,
+				249589F52079205300DF7F26 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				249589F02079205300DF7F26 /* PBXTargetDependency */,
 			);
 			name = Videx;
 			productName = Videx;
 			productReference = 249589CE20791F4D00DF7F26 /* Videx.app */;
 			productType = "com.apple.product-type.application";
+		};
+		249589E62079205300DF7F26 /* Extract Video */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 249589F22079205300DF7F26 /* Build configuration list for PBXNativeTarget "Extract Video" */;
+			buildPhases = (
+				249589E32079205300DF7F26 /* Sources */,
+				249589E42079205300DF7F26 /* Frameworks */,
+				249589E52079205300DF7F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Extract Video";
+			productName = "Extract Video";
+			productReference = 249589E72079205300DF7F26 /* Extract Video.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +167,9 @@
 				ORGANIZATIONNAME = nik;
 				TargetAttributes = {
 					249589CD20791F4D00DF7F26 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					249589E62079205300DF7F26 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -113,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				249589CD20791F4D00DF7F26 /* Videx */,
+				249589E62079205300DF7F26 /* Extract Video */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +204,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		249589E52079205300DF7F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249589FA2079343700DF7F26 /* ExtractVideo.js in Resources */,
+				249589ED2079205300DF7F26 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		249589E32079205300DF7F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249589EA2079205300DF7F26 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		249589F02079205300DF7F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249589E62079205300DF7F26 /* Extract Video */;
+			targetProxy = 249589EF2079205300DF7F26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		249589D520791F4D00DF7F26 /* Main.storyboard */ = {
@@ -157,6 +258,14 @@
 				249589DB20791F4E00DF7F26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		249589EB2079205300DF7F26 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				249589EC2079205300DF7F26 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,6 +388,7 @@
 		249589E120791F4E00DF7F26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAPBC93DAB;
@@ -287,7 +397,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.vangerow.Videx;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.vangerow.videx-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,6 +407,7 @@
 		249589E220791F4E00DF7F26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAPBC93DAB;
@@ -305,8 +416,46 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.vangerow.Videx;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.vangerow.videx-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		249589F32079205300DF7F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAPBC93DAB;
+				INFOPLIST_FILE = "Extract Video/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.vangerow.videx-app.Extract-Video";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		249589F42079205300DF7F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAPBC93DAB;
+				INFOPLIST_FILE = "Extract Video/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.vangerow.videx-app.Extract-Video";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +478,15 @@
 			buildConfigurations = (
 				249589E120791F4E00DF7F26 /* Debug */,
 				249589E220791F4E00DF7F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		249589F22079205300DF7F26 /* Build configuration list for PBXNativeTarget "Extract Video" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249589F32079205300DF7F26 /* Debug */,
+				249589F42079205300DF7F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
