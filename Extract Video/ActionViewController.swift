@@ -20,14 +20,14 @@ class ActionViewController: UIViewController {
         
         let item = self.extensionContext!.inputItems.first as! NSExtensionItem
         let provider = item.attachments?.first as! NSItemProvider
-        
+
         provider.loadItem(
             forTypeIdentifier: kUTTypePropertyList as String, options: nil)
             { (dictionary, error) in
                 guard let dic = dictionary as? NSDictionary,
                     let javascript = dic.object(forKey: NSExtensionJavaScriptPreprocessingResultsKey) as? NSDictionary,
                     let videos = javascript.object(forKey: "videos") as? [String] else {
-                    self.exit(error: error.localizedDescription)
+                    self.exit(error: error?.localizedDescription ?? "no error message")
                     return;
                 }
             
